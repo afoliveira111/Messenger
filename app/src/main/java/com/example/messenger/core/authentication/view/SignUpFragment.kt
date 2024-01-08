@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.messenger.databinding.FragmentLoginBinding
+import com.example.messenger.databinding.FragmentSignBinding
 
-class LoginFragment : Fragment() {
+class SignUpFragment : Fragment() {
 
-    private var _binding: FragmentLoginBinding? = null
+    private var _binding: FragmentSignBinding? = null
     private val binding get() = _binding!!
     private lateinit var  loginCallback: LoginCallback
 
@@ -18,8 +18,8 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+    ): View {
+        _binding = FragmentSignBinding.inflate(inflater, container, false)
         return  binding.root
     }
 
@@ -32,9 +32,8 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btnCreate.setOnClickListener {
-            loginCallback.onCreateAccountClicked()
-        }
+
+
     }
 
     override fun onDestroy() {
