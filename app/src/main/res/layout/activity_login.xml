@@ -28,12 +28,16 @@
             android:id="@+id/input_email"
             app:boxBackgroundColor="@android:color/transparent"
             app:boxStrokeWidth="0dp"
+            android:hint="@string/email"
+            app:endIconMode="clear_text"
             app:boxStrokeWidthFocused="0dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/ed_email"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
