@@ -30,6 +30,7 @@
             app:boxStrokeWidth="0dp"
             android:hint="@string/email"
             app:endIconMode="clear_text"
+            app:hintTextColor="@color/dark_gray"
             app:boxStrokeWidthFocused="0dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -42,6 +43,29 @@
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="?attr/textInputFilledStyle"
+            android:background="@drawable/text_input_background"
+            android:id="@+id/input_pass"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeWidth="0dp"
+            android:hint="@string/password"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="@color/dark_gray"
+            app:boxStrokeWidthFocused="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_pass"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
 
     </LinearLayout>
 
